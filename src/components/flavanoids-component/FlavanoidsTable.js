@@ -21,7 +21,8 @@ export default function FlavanoidsTable({cateData}) {
                 {cateData[item].items.map((list, i) => (
                     
                     <td colSpan={list.length} key={i}>
-                        {list}
+                        {Math.round(list)}
+                        {/* {list} */}
                     </td>
                     
                 ))}

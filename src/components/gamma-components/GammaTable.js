@@ -21,7 +21,7 @@ export default function GammaTable({cateData}) {
                 <td colSpan="10">Gamma {item}</td>
                 {cateData[item].map((list, i) => (
                     <td colSpan={list.length} key={i}>
-                        {((list.ash * list.hue) / list.magnesium).toFixed(3)}
+                        {Math.round((list.ash * list.hue) / list.magnesium)}
                     </td>
                 ))}
                 </tr>

@@ -39,7 +39,7 @@ export default function Gamma() {
     // second total
     const filterTwo = data.filter((item) => item.alcohol === 2);
     const level1 = filterTwo.map((item) =>
-        Math.floor((item.ash * item.hue) / item.magnesium)
+      (item.ash * item.hue) / (item.magnesium)
     );
     const total1 = level1.reduce((acc, cal) => acc + cal, 0);
 

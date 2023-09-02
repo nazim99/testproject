@@ -13,9 +13,9 @@ export default function GammaCalculate({total, total1, total2}) {
             </thead>
             <tbody>
             <tr>
-                <td>{total}</td>
-                <td>{total1}</td>
-                <td>{total2}</td>
+                <td>{total.toFixed(3)}</td>
+                <td>{total1.toFixed(3)}</td>
+                <td>{total2.toFixed(3)}</td>
             </tr>
             </tbody>
         </table>
